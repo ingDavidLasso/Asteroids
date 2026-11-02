@@ -26,7 +26,8 @@ def main():
         screen.fill("black")
         #1. Draw player
         player.draw(screen)
-        #2. Push the complete frame
+        player.update(dt)
+        #2. Push the complete frame (render)
         pygame.display.flip()
         dt = clock.tick(60) / 1000
 
